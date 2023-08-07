@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Roboto:wght@300&family=Ysabeau+Infant:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 22px;
+  color: #fff;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 1rem 0.5rem;
+}
+
+.form {
+  width: 100%;
+  max-width: 420px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 5.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 20px 20px rgba(0, 0, 0, 0.12);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-bottom: 0.2rem;
+  position: relative;
+}
+
+a,
+a:visited {
+  color: #fff;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  height: 2rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  padding: 0.5rem;
+  border-style: solid;
+  border-color: #d1d1d1;
+  border-width: 1px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.email-placeholder {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  font-size: 18px;
+  padding: 0px 3px;
+  color: #666;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.email-label {
+  top: -10px;
+  left: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #000;
+}
+
+input:focus + .email-placeholder {
+  top: -10px;
+  left: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #000;
+}
+
+.password-placeholder {
+  position: absolute;
+  top: 75px;
+  left: 12px;
+  font-size: 18px;
+  padding: 0px 3px;
+  color: #666;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+input:focus + .password-placeholder {
+  top: 55px;
+  left: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #000;
+}
+
+.password-label {
+  top: 55px;
+  left: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #000;
+}
+
+.password-eye {
+  position: absolute;
+  top: 98px;
+  right: 12px;
+  cursor: pointer;
+  border-radius: 16px;
+  height: 24px;
+  width: 24px;
+  padding-left: 1px;
+}
+
+.password-eye:hover {
+  background-color: #f0f2f5;
+}
+
+button {
+  color: #fff;
+  background-color: #222;
+  height: 2.2rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  padding: 0.25rem;
+  border-width: 1px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+label {
+  margin-top: 1rem;
+  color: #000;
+  font-weight: bold;
+}
+
+label {
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+.line {
+  display: inline-block;
+}
+
+.line a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #111;
+}
+
+.line a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  font-family: "Phudu", cursive;
+  background: #222;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+
+nav .logo {
+  color: #dcdcdc;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+nav .logo:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+
+nav .rightSide {
+  display: flex;
+}
+
+nav .rightSide a {
+  color: #dcdcdc;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 16px;
+  letter-spacing: 1px;
+  transition: all 0.1s ease;
+  margin: 0 5px;
+}
+
+nav .rightSide a.active,
+nav .rightSide a:hover {
+  color: #fff;
+  font-weight: 600;
+}
+
+nav .menu-btn i {
+  color: #dcdcdc;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 0 40px 0 50px;
+  }
+
+  nav .menu-btn i {
+    display: block;
+  }
+
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+
+  nav .rightSide {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #ffffff;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  #click:checked ~ .rightSide {
+    left: 0;
+  }
+
+  nav .rightSide a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: #777;
+  }
+
+  #click:checked ~ .rightSide a {
+    margin-left: 0px;
+  }
+
+  nav .rightSide a.active,
+  nav .rightSide a:hover {
+    background: none;
+    color: #111;
+    font-weight: bold;
+    box-shadow: none;
+  }
+}
+
+.content div {
+  font-size: 40px;
+  font-weight: 700;
+}
